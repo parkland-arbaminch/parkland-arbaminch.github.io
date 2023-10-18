@@ -32,12 +32,12 @@
   addMultipleEvent(window, 'resize scroll load', utillFunction);
 
   function utillFunction(){
-    let offSetHeight = body.offsetHeight;
-    console.log('offSetHeight is ', offSetHeight);
-    if (offSetHeight > 1006) {    // = 1024px
+    let offSetWidth = body.offsetWidth;
+    console.log('offSetWidth is ', offSetWidth);
+    if (offSetWidth > 1006) {    // = 1024px
       stickyNav();
       header.style.display = 'block';  // ########
-      dropdown.forEach((li) => {
+      dropdown?.forEach((li) => {
         li.classList.add("dropdown-wrapper");
       }) 
     }
