@@ -627,7 +627,6 @@
                             <div class="inner-wrapper">
                                 <a class="${className.ad} dropdown-link" href="${setUrl.ad}">
                                     <i class="bi bi-r-square-fill"></i>Admissions
-                                    <span class="dropdown-closed nav-span-one"></span>
                                 </a>
                                 <span class="dropdown-closed nav-span-two"></span>
                             </div>
@@ -643,7 +642,6 @@
                             <div class="inner-wrapper">
                                 <a class="${className.ac} dropdown-link" href="${setUrl.ac}">
                                     <i class="bi bi-mortarboard-fill"></i>Academics 
-                                    <span class="dropdown-closed nav-span-one"></span>
                                 </a>
                                 <span class="dropdown-closed nav-span-two"></span>
                             </div>
@@ -659,7 +657,6 @@
                             <div class="inner-wrapper">
                                 <a class="${className.coc} dropdown-link" href="${setUrl.coc}">
                                     <i class="bi bi-patch-check-fill"></i>COC
-                                    <span class="dropdown-closed nav-span-one"></span>
                                 </a>
                                 <span class="dropdown-closed nav-span-two"></span>
                             </div>
@@ -674,8 +671,7 @@
                         <li class="nav-link-wrapper dropdown">
                             <div class="inner-wrapper">
                                 <a class="${className.tr} dropdown-link" href="${setUrl.tr}">
-                                    <i class="bi bi-book-half"></i>Training 
-                                    <span class="dropdown-closed nav-span-one"></span>
+                                    <i class="bi bi-book-half"></i>Training
                                 </a>
                                 <span class="dropdown-closed nav-span-two"></span>
                             </div>
