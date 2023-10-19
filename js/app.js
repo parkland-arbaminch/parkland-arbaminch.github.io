@@ -34,7 +34,6 @@
     if (offSetWidth > 1006) {    // = 1024px
       stickyNav();
       header.style.display = 'block';  // ########
-      navBar.classList.remove("sticky-nav");
       dropdown?.forEach((li) => {
         li.classList.add("dropdown-wrapper");
       }) 
