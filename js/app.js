@@ -46,18 +46,7 @@
       scrollToTopEl.classList.remove("scroll-up");
     } else {
       scrollToTopEl.classList.add("scroll-up");
-    
     }
-  }
-  
-  let numberOfChildren = mainContainer.childElementCount;
-  console.log('numberOfChildren', numberOfChildren);
-  function setStyleTop(n) {
-      for(let i=0; i< numberOfChildren; i++) {
-          if(i >= 2) {
-              mainContainer.children[i].style.top = `${n}px`;
-          }
-      }
   }
 
   scrollToTopEl.addEventListener('click', scrollToTopFn, false);
