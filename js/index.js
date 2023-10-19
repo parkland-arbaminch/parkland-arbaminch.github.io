@@ -91,52 +91,8 @@
 
 
 
-  
-  // window.addEventListener('scroll', stickyScrolllUp, false);
-  
-
-  // function stickyScrolllUp() {
-  //   if (window.scrollY >= stickyPosition) {
-  //     scrollToTopEl.classList.remove("scroll-up");
-  //   } else {
-  //     scrollToTopEl.classList.add("scroll-up");
-    
-  //   }
-  // }
-
-  
-
   // SECTION: ============================================= Navigator
   // ================================================================
-
-  // ######## PART-ONE: For Min-width: 1024x
-
-  function navWaraper() {
-    console.log('li length', dropdown.length);
-    dropdown.forEach(a => {
-      addEvent(a, 'mouseover', navMouseover);
-      addEvent(a, 'mouseout', navMouseout);
-    });
-    function navMouseover() {
-      // let navSpanOne = this.firstElementChild.firstElementChild.firstElementChild.nextElementSibling;
-      let divElement =  this.firstElementChild;
-      let aElement = divElement.firstElementChild;
-      let navSpanOne = aElement.firstElementChild.nextElementSibling;
-      navSpanOne.classList.remove('dropdown-closed');
-      navSpanOne.classList.add('dropdown-open');
-    }
-    function navMouseout() {
-      let divElement =  this.firstElementChild;
-      let aElement = divElement.firstElementChild;
-      let navSpanOne = aElement.firstElementChild.nextElementSibling;
-      navSpanOne.classList.remove('dropdown-open');
-      navSpanOne.classList.add('dropdown-closed');
-    }
-  }
-  navWaraper()
-
-  // ######## PART-TWO: For Max-width: 1024px
-
   dropdown.forEach(li => {
     let firstChiledElement = li.children[0];    // newly added
     let secondChildElemet = firstChiledElement.children[1];     // let secondChildElemet = li.children[1];
