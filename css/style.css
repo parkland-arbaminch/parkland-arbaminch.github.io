@@ -435,6 +435,7 @@ details.touch summary {  /* For touch screen*/
 } */
 
 #mainContainer._grid-column-1 {
+    position: relative;
     gap: 0;
     /* display: grid;
     grid-template-columns: 1fr; */
@@ -472,6 +473,7 @@ details.touch summary {  /* For touch screen*/
 /* SECTION: ================================================ Header */
 /* ================================================================ */
 header {
+    display: block;
     height: 80px;
     width: 100%;
     text-align: center;
@@ -514,6 +516,11 @@ header p {
 
 /* SECTION: ============================================= Navigator */
 /* ================================================================ */
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 nav {
     /* position: relative;
     top: 0; */
@@ -529,6 +536,8 @@ nav {
     padding: var(--padding-1);
     margin-bottom: .25rem;
     gap: .5vw;
+
+    
 }
 nav .bi {
     margin-right: .5rem;
@@ -726,13 +735,13 @@ nav > .nav-list > ul li {
     background-repeat: no-repeat;
 }
 
-.sticky-nav {
+/* .sticky-nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
-}
+} */
 
 
 
