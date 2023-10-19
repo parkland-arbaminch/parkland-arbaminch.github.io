@@ -32,22 +32,14 @@
     let offSetWidth = body.offsetWidth;
     console.log('offSetWidth is ', offSetWidth);
     if (offSetWidth > 1006) {    // = 1024px
-      stickyNav();
-      header.style.display = 'block';  // ########
       dropdown?.forEach((li) => {
         li.classList.add("dropdown-wrapper");
       }) 
-      setStyleTop(0);
     }
     else {
-      header.style.display = 'none';
-      navBar.classList.add("sticky-nav");
       dropdown?.forEach((li) => {
         li.classList.remove("dropdown-wrapper");
       })
-      
-      // main_one.style.top = '80px';    // #########
-      setStyleTop(80);
     }
 
     if (window.scrollY >= stickyPosition) {
@@ -55,18 +47,6 @@
     } else {
       scrollToTopEl.classList.add("scroll-up");
     
-    }
-  }
-
-  function stickyNav() {
-    if (window.scrollY >= sticky) {
-      navBar.classList.add("sticky-nav");
-      // main_one.style.top = '80px';    // ########
-      setStyleTop(80);
-    } else {
-      navBar.classList.remove("sticky-nav");
-      // main_one.style.top = '0';   // ########
-      setStyleTop(0);
     }
   }
   
