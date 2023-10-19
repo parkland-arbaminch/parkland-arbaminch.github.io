@@ -25,7 +25,8 @@
   let stickyPosition = 600;
 
   // Function-1
-  addMultipleEvent(window, 'resize scroll load', utillFunction);
+  addMultipleEvent(window, 'resize scroll load orientationchange', utillFunction);
+  addMultipleEvent(document, 'resize scroll load orientationchange', utillFunction);
 
   function utillFunction(){
     let offSetWidth = body.offsetWidth;
@@ -33,9 +34,11 @@
     if (offSetWidth > 1006) {    // = 1024px
       stickyNav();
       header.style.display = 'block';  // ########
+      navBar.classList.remove("sticky-nav");
       dropdown?.forEach((li) => {
         li.classList.add("dropdown-wrapper");
       }) 
+      setStyleTop(0);
     }
     else {
       header.style.display = 'none';
