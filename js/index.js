@@ -29,7 +29,8 @@
   
 
   // Function-1
-  addMultipleEvent(window, 'resize scroll load', utillFunction);
+  addMultipleEvent(window, 'resize scroll load orientationchange', utillFunction);
+  addMultipleEvent(document, 'resize scroll load orientationchange', utillFunction);
 
   function utillFunction(){
     let offSetWidth = body.offsetWidth;
@@ -37,9 +38,11 @@
     if (offSetWidth > 1006) {    // = 1024px
       stickyNav();
       header.style.display = 'block';  // ########
+      navBar.classList.remove("sticky-nav");
       dropdown?.forEach((li) => {
         li.classList.add("dropdown-wrapper");
       }) 
+      setStyleTop(0);
     }
     else {
       header.style.display = 'none';
@@ -94,8 +97,8 @@
   // SECTION: ============================================= Navigator
   // ================================================================
   dropdown.forEach(li => {
-    let firstChiledElement = li.children[0];    // newly added
-    let secondChildElemet = firstChiledElement.children[1];     // let secondChildElemet = li.children[1];
+    let firstChiledElement = li.children[0];    
+    let secondChildElemet = firstChiledElement.children[1];     
     if(secondChildElemet) {
       addEvent(secondChildElemet, 'click', dropDownToggle);
     }
@@ -114,10 +117,10 @@
   let menusSmallSize = document.querySelector('#menu-small-size');
   let menuIcon = document.querySelector('.menu-icon');
   let navContainer = document.querySelector('.nav-container');
-  let nav_list = document.querySelector('.nav-list');    // ############ navContainer
+  let nav_list = document.querySelector('.nav-list');   
   let menu_container = document.querySelector('.menu-container');
 
-  nav_list.style.left="-100%";  // ###########
+  nav_list.style.left="-100%"; 
   let btnChild = menu_container.firstElementChild;
 
   addEvent(menusSmallSize, 'click', () => {
