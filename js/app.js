@@ -89,35 +89,6 @@
   // SECTION: ============================================= Navigator
   // ================================================================
 
-  // ######## PART-ONE: For Min-width: 1024px
-
-  function waraper() {
-    console.log('li length', dropdown.length);
-    dropdown?.forEach(a => {
-      addEvent(a, 'mouseover', navMouseover);
-      addEvent(a, 'mouseout', navMouseout);
-    });
-    function navMouseover() {
-        let divElement =  this.firstElementChild;
-      let aElement = divElement.firstElementChild;
-      let navSpanOne = aElement.firstElementChild.nextElementSibling;
-        // let navSpanOne = this.firstElementChild.firstElementChild.firstElementChild;
-      navSpanOne.classList.remove('dropdown-closed');
-      navSpanOne.classList.add('dropdown-open');
-    }
-    function navMouseout() {
-        let divElement =  this.firstElementChild;
-        let aElement = divElement.firstElementChild;
-        let navSpanOne = aElement.firstElementChild.nextElementSibling;
-        // let navSpanOne = this.firstElementChild.firstElementChild.firstElementChild;
-        navSpanOne.classList.remove('dropdown-open');
-        navSpanOne.classList.add('dropdown-closed');
-    }
-  }
-  waraper()
-
-  // ######## PART-TWO: For Max-width: 1024px
-
   dropdown?.forEach(li => {
     let firstChiledElement = li.children[0]; 
     let secondChildElemet = firstChiledElement.children[1]; 
