@@ -2865,21 +2865,16 @@ aside.spotlight img.ic-two-touch {  /** 'ic-two' stands for 'inner-container-two
     max-width: 18.7rem;
     cursor: pointer;
 }
-.inner-news-event-cont-one .section-one-path :where(section.news, section.event) figure:hover::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(to top right, #1a1a1a, transparent);
-    border-radius: var(--border-radius-5);
-    z-index: 2;
-}
 .inner-news-event-cont-one .section-one-path :where(section.news, section.event) figure img {
     border-radius: var(--border-radius-4);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
     transition: var(--tran-05);
     aspect-ratio: 4/3;
     object-fit: cover;
+    cursor: pointer;
+}
+.inner-news-event-cont-one .section-one-path :where(section.news, section.event) figure img:hover {
+    transform: scale(1.1);
 }
 
 
