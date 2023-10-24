@@ -1,6 +1,8 @@
 // index.js file is mainly used for home-page template
 
 (function () {
+    let touchSupported = window.matchMedia('(pointer: coarse)').matches;  // A finger on a touchscreen is a coarse pointer
+    let pointerFineSupported = window.matchMedia('(pointer: fine)').matches; // A mouse or stylus is a fine pointer
     
     // GENERIC: ======================================== Truncated Text
     // ================================================================
@@ -165,16 +167,19 @@
       let closeSlider = slider.children[3];
 
       preSlider.addEventListener('click', prevSlide, false ); // Both touch screen and desktop
-      preSlider.addEventListener('mouseover', prevMouseOver, false );
-      preSlider.addEventListener('mouseout', prevMouseOut, false );
-
       nextSlider.addEventListener('click', nextSlide, false );   // Both touch screen and desktop
-      nextSlider.addEventListener('mouseover', nextMouseOver, false );
-      nextSlider.addEventListener('mouseout', nextMouseOut, false );
-
       closeSlider.addEventListener('click', closeGallery, false); // Both touch screen and desktop
-      closeSlider.addEventListener('mouseover', closeMouseOver, false );
-      closeSlider.addEventListener('mouseout', closeMouseOut, false );
+
+      if(pointerFineSupported) {
+        preSlider.addEventListener('mouseover', prevMouseOver, false );
+        preSlider.addEventListener('mouseout', prevMouseOut, false );
+          
+        nextSlider.addEventListener('mouseover', nextMouseOver, false );
+        nextSlider.addEventListener('mouseout', nextMouseOut, false );
+
+        closeSlider.addEventListener('mouseover', closeMouseOver, false );
+        closeSlider.addEventListener('mouseout', closeMouseOut, false );
+      }
 
       function showSlide(n) {
         slides.forEach(slide => slide.style.display = "none");
