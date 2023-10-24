@@ -92,5 +92,125 @@
       let parentElement = this.parentNode;
       parentElement.classList.toggle("expanded");
     }
+
+    // GENERIC: ============================= Gallery Full-screen viwer
+  // ================================================================
+
+  let _gallery_body = document.querySelector('body');
+  let _gallery_wrapper = document.querySelectorAll('._gallery-wrapper');
+
+  _gallery_wrapper.forEach(gw => {
+    gw.addEventListener('click', function(e) {
+      fullScreenFn(e, gw);
+    }, false);
+  });
+
+  function fullScreenFn(e, gw) {
+    let target = e.target;
+    if(target.nodeName.toLowerCase() == 'img') {
+      console.log('true');
+      let _galleryImg = gw.getElementsByTagName('img');
+      let index = Array.prototype.indexOf.call(_galleryImg, target);
+      let slideIndex = index;
+      console.log('Index of the element:', index);
+
+      let gallery_w_container = document.createElement("div");
+      gallery_w_container.setAttribute("class", "_gallery-w-container");
+
+      let gallery_w = document.createElement("div");
+      gallery_w.setAttribute("class", "_gallery-w");
+
+      let inner_wrapper = document.createElement("div");
+      inner_wrapper.setAttribute("class", "_inner_wrapper");
+
+      let prev = document.createElement("a");
+      prev.setAttribute("class", "prev");
+      let leftSlide = document.createElement("i");
+      leftSlide.setAttribute("class", "bi bi-chevron-left");
+      prev.appendChild(leftSlide);
+
+      let next = document.createElement("a");
+      next.setAttribute("class", "next");
+      let rightSlide = document.createElement("i");
+      rightSlide.setAttribute("class", "bi bi-chevron-right");
+      next.appendChild(rightSlide);
+
+      let closeEl = document.createElement("span");
+      closeEl.setAttribute("class", "gallery-close");
+      let closeIcon = document.createElement("i");
+      closeIcon.setAttribute("class", "bi bi-x-lg");
+      closeEl.appendChild(closeIcon);
+
+      // Copy elements from gallery_wrapper to inner_wrapper 
+      let figuresToCopy = gw.children;
+      for (let i = 0; i < figuresToCopy.length; i++) {
+        let figures = figuresToCopy[i].cloneNode(true);
+        inner_wrapper.appendChild(figures);
+      }
+
+      gallery_w.appendChild(inner_wrapper);
+      gallery_w.appendChild(prev);
+      gallery_w.appendChild(next);
+      gallery_w.appendChild(closeEl);
+      gallery_w_container.appendChild(gallery_w);
+      _gallery_body.appendChild(gallery_w_container);
+
+      // ### Create Slide-Gallery
+      let slider = document.querySelector('._gallery-w');
+      let slides = document.querySelectorAll('._inner_wrapper figure');
+      console.log('slides is:- ', slides.length);
+
+      let preSlider = slider.children[1];
+      let nextSlider = slider.children[2];
+      let closeSlider = slider.children[3];
+
+      preSlider.addEventListener('click', prevSlide, false ); // Both touch screen and desktop
+      preSlider.addEventListener('mouseover', prevMouseOver, false );
+      preSlider.addEventListener('mouseout', prevMouseOut, false );
+
+      nextSlider.addEventListener('click', nextSlide, false );   // Both touch screen and desktop
+      nextSlider.addEventListener('mouseover', nextMouseOver, false );
+      nextSlider.addEventListener('mouseout', nextMouseOut, false );
+
+      closeSlider.addEventListener('click', closeGallery, false); // Both touch screen and desktop
+      closeSlider.addEventListener('mouseover', closeMouseOver, false );
+      closeSlider.addEventListener('mouseout', closeMouseOut, false );
+
+      function showSlide(n) {
+        slides.forEach(slide => slide.style.display = "none");
+        slides[n].style.display = "block";
+      }
+      function nextSlide() {
+        slideIndex++;
+        if (slideIndex >= slides.length) {
+        slideIndex = 0;
+        }
+        showSlide(slideIndex);
+      }
+      function prevSlide() {
+        slideIndex--;
+        if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+        }
+        showSlide(slideIndex);
+      }
+      showSlide(slideIndex);
+
+      function prevMouseOver() { preSlider.style.backgroundColor = "rgba(241, 243, 245, 1)"; }
+      function prevMouseOut() { preSlider.style.backgroundColor = "rgba(241, 243, 245, .6)"; }
+
+      function nextMouseOver() { nextSlider.style.backgroundColor = "rgba(241, 243, 245, 1)"; }
+      function nextMouseOut() { nextSlider.style.backgroundColor = "rgba(241, 243, 245, .6)"; }
+
+      function closeMouseOver() { closeSlider.style.backgroundColor = "rgba(241, 243, 245, 1)"; }
+      function closeMouseOut() { closeSlider.style.backgroundColor = "rgba(241, 243, 245, .6)"; }
+
+
+      // ### Remove Slide-Gallery
+      function closeGallery() {
+        _gallery_body.removeChild(gallery_w_container);
+      }
+    }
+  }
     
 }());
