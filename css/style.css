@@ -3029,6 +3029,10 @@ aside.spotlight img.ic-two-touch {  /** 'ic-two' stands for 'inner-container-two
     transition: var(--tran-05);
     aspect-ratio: 4/3;
     object-fit: cover;
+    cursor: pointer;
+}
+.inner-home-cont-one .home-path .section-one-gallery .col figure img:hover {
+    transform: scale(1.1);
 }
 
 
