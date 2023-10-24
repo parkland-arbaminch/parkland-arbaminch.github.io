@@ -115,7 +115,7 @@
   let slider = document.querySelector('#slider');
   let slideIndex = 0;
   let autoSlide;
-  const slideInterval = 4000; // milliseconds
+  const slideInterval = 8000; // milliseconds
 
   let preSliderBtn = slider.children[1];
   let nextSliderBtn = slider.children[2];
