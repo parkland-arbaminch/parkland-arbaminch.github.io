@@ -1083,6 +1083,47 @@ nav .menu-container {
     right: 1vw;
 }
 
+/* SECTION: ========================================= Container-Two-new */
+/* ================================================================ */
+
+.container-two-new .inner-container-two-new {
+    display: flex;
+    gap: var(--gap-1);
+    margin: var(--margin-1);
+    padding: var(--padding-2);
+    background: var(--body-color-b);
+}
+.container-two-new .inner-container-two-new :where(main.intro, aside.spotlight) {
+    border: var(--border-1);
+    border-radius: var(--border-radius-3);
+    padding: var(--padding-3);
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    background: var(--body-color-a);
+}
+main.intro img {
+    float: left;
+    width: 40%;
+    overflow: hidden;
+    margin-right: var(--margin-3);
+    border-radius: var(--border-radius-5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: var(--tran-05);
+}
+main.intro img:hover {
+    transform: scale(1.02);
+    filter: saturate(150%);
+}
+main.intro img.ic-two-touch { /** 'ic-two' stands for 'inner-container-two' */
+    transform: scale(1.02);
+    filter: saturate(150%);
+}
+main.intro p a {
+    color: var(--heading-color-1);
+}
+main.intro p a:hover {
+    color: var(--nav-color-2);
+}
 
 /* SECTION: ========================================= Container-Two */
 /* ================================================================ */
