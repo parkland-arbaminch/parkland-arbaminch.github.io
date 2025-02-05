@@ -19,7 +19,9 @@
                     'news1.html', 'news2.html', 'news3.html', 'news4.html', 'news5.html', 'news6.html', 'news7.html',
                     'news8.html', 'news9.html', 'news10.html',
                     'event1.html', 'event2.html', 'event3.html',
-                    'about-us.html', 'contact-us.html', 'president-message.html', 'video.html', 'gallery.html']   
+                    'about-us.html', 'contact-us.html', 'president-message.html', 'video.html', 'gallery.html',
+                    'news11.html', 'news12.html',
+                    'e-library.html', 'crop-production.html', 'animal-production.html', 'natural-resource-conservation.html', 'animal-health.html', 'tour-operation.html']   
     ;
 
     // let mainPathname = ['home', 'ad', 'ac', 'coc', 'tr', 'ne'];
@@ -544,6 +546,78 @@
         className.ho = 'active';
         setInnerPath.base = '';
         setInnerPath.ho = '';
+        } else {
+        // className.ad = '';
+        // setUrl.ad = '../ad/admissions.html';
+        }
+
+        if(pathnameTruth.indexOf('true') === 51) {  /** News and Events - All News - news11 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else {
+        // className.ad = '';
+        // setUrl.ad = '../ad/admissions.html';
+        }
+
+        if(pathnameTruth.indexOf('true') === 52) {  /** News and Events - All News - news12 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else {
+        // className.ad = '';
+        // setUrl.ad = '../ad/admissions.html';
+        }
+
+        if(pathnameTruth.indexOf('true') === 53) {  /** Training - Digital Library */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
+        } else {
+        // className.ad = '';
+        // setUrl.ad = '../ad/admissions.html';
+        }
+
+        if(pathnameTruth.indexOf('true') === 54) {  /** Training - Digital Library - Crop production */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
+        } else {
+        // className.ad = '';
+        // setUrl.ad = '../ad/admissions.html';
+        }
+
+        if(pathnameTruth.indexOf('true') === 55) {  /** Training - Digital Library - Animal production */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
+        } else {
+        // className.ad = '';
+        // setUrl.ad = '../ad/admissions.html';
+        }
+
+        if(pathnameTruth.indexOf('true') === 56) {  /** Training - Digital Library - Natural Resource... */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
+        } else {
+        // className.ad = '';
+        // setUrl.ad = '../ad/admissions.html';
+        }
+
+        if(pathnameTruth.indexOf('true') === 57) {  /** Training - Digital Library - Animal Health */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
+        } else {
+        // className.ad = '';
+        // setUrl.ad = '../ad/admissions.html';
+        }
+
+        if(pathnameTruth.indexOf('true') === 58) {  /** Training - Digital Library - Tour operation */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
         } else {
         // className.ad = '';
         // setUrl.ad = '../ad/admissions.html';
