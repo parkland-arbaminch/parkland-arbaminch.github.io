@@ -723,9 +723,9 @@
                         <h2>Information About</h2>
                         <ul>
                             <li><a href="${setInnerPath.base}${setInnerPath.ho}about-us.html">About us</a></li>
-                            <li><a href="footer/staffs.html">Staffs</a></li>
+                            <li><a href="#">Staffs</a></li>
                             <li><a href="#">Course fees & scholarship</a></li>
-                            <li><a href="#">Libraries</a></li>
+                            <li><a href="${setInnerPath.base}${setInnerPath.tr}e-library.html">Libraries</a></li>
                             <li><a href="#">Strategic plan</a></li>
                             <li><a href="#">Parkland's research</a></li>
                             <li><a href="#">Conferences at Parkland</a></li>
@@ -760,7 +760,7 @@
                         <h2>Systems</h2>
                         <ul>
                             <li><a href="#">Parkland mail</a></li>
-                            <li><a href="#">Digital library</a></li>
+                            <li><a href="${setInnerPath.base}${setInnerPath.tr}e-library.html">Digital library</a></li>
                             <li><a href="#">E-learning</a></li>
                         </ul>
                     </div>
