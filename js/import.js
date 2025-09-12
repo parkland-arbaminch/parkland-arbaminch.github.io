@@ -21,7 +21,8 @@
                     'event1.html', 'event2.html', 'event3.html',
                     'about-us.html', 'contact-us.html', 'president-message.html', 'video.html', 'gallery.html',
                     'news11.html', 'news12.html',
-                    'e-library.html', 'crop-production.html', 'animal-production.html', 'natural-resource-conservation.html', 'animal-health.html', 'tour-operation.html']   
+                    'e-library.html', 'crop-production.html', 'animal-production.html', 'natural-resource-conservation.html', 'animal-health.html', 'tour-operation.html',
+                    'news13.html', 'news14.html']
     ;
 
     // let mainPathname = ['home', 'ad', 'ac', 'coc', 'tr', 'ne'];
@@ -159,399 +160,219 @@
             className.ad = 'active';
             setInnerPath.base = '';
             setInnerPath.ad = '';
-        } else {
-            // className.ad = '';
-            // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 7) {  /** Diploma */
+        } else if(pathnameTruth.indexOf('true') === 7) {  /** Diploma */
             className.ad = 'active';
             setInnerPath.base = '';
             setInnerPath.ad = '';
-        } else {
-            // className.ad = '';
-            // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 8) {  /** Postgraduate */
+        } else if(pathnameTruth.indexOf('true') === 8) {  /** Postgraduate */
             className.ad = 'active';
             setInnerPath.base = '';
             setInnerPath.ad = '';
-        } else {
-            // className.ad = '';
-            // setUrl.ad = '../ad/admissions.html'; continuing
-        }
-
-        if(pathnameTruth.indexOf('true') === 9) {  /** Continuing */
+        } else if(pathnameTruth.indexOf('true') === 9) {  /** Continuing */
             className.ad = 'active';
             setInnerPath.base = '';
             setInnerPath.ad = '';
-        } else {
-            // className.ad = '';
-            // setUrl.ad = '../ad/admissions.html'; continuing
-        }
-
-        /* ############## Academic */
-        if(pathnameTruth.indexOf('true') === 10) {  /** Academic - Degree  */
+        } else if(pathnameTruth.indexOf('true') === 10) {  /* ############## Academic */ /** Academic - Degree  */
             className.ac = 'active';
             setInnerPath.base = '';
             setInnerPath.ac = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 11) {  /** Academic - Diploma  */
+        } else if(pathnameTruth.indexOf('true') === 11) {  /** Academic - Diploma  */
             className.ac = 'active';
             setInnerPath.base = '';
             setInnerPath.ac = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 12) {  /** Academic - Postgraduate  */
+        } else if(pathnameTruth.indexOf('true') === 12) {  /** Academic - Postgraduate  */
             className.ac = 'active';
             setInnerPath.base = '';
             setInnerPath.ac = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 13) {  /** Academic - Continuing and distance  */
+        } else if(pathnameTruth.indexOf('true') === 13) {  /** Academic - Continuing and distance  */
             className.ac = 'active';
             setInnerPath.base = '';
             setInnerPath.ac = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        /* ############## COC */
-        if(pathnameTruth.indexOf('true') === 14) {  /** COC - Level-1  */
+        } else if(pathnameTruth.indexOf('true') === 14) {  /* ############## COC */ /** COC - Level-1  */
             className.coc = 'active';
             setInnerPath.base = '';
             setInnerPath.coc = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 15) {  /** COC - Level-2  */
+        } else if(pathnameTruth.indexOf('true') === 15) {  /** COC - Level-2  */
             className.coc = 'active';
             setInnerPath.base = '';
             setInnerPath.coc = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 16) {  /** COC - Level-3  */
+        } else if(pathnameTruth.indexOf('true') === 16) {  /** COC - Level-3  */
             className.coc = 'active';
             setInnerPath.base = '';
             setInnerPath.coc = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 17) {  /** COC - Level-4  */
+        } else if(pathnameTruth.indexOf('true') === 17) {  /** COC - Level-4  */
             className.coc = 'active';
             setInnerPath.base = '';
             setInnerPath.coc = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        /* ############## Training */
-        if(pathnameTruth.indexOf('true') === 18) {  /** Training - eng-language */
+        } else if(pathnameTruth.indexOf('true') === 18) {  /* ############## Training */ /** Training - eng-language */
             className.tr = 'active';
             setInnerPath.base = '';
             setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 19) {  /** Training - accounting-skill */
+        } else if(pathnameTruth.indexOf('true') === 19) {  /** Training - accounting-skill */
             className.tr = 'active';
             setInnerPath.base = '';
             setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 20) {  /** Training - computer-skills */
+        } else if(pathnameTruth.indexOf('true') === 20) {  /** Training - computer-skills */
             className.tr = 'active';
             setInnerPath.base = '';
             setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 21) {  /** Training - web-development */
+        } else if(pathnameTruth.indexOf('true') === 21) {  /** Training - web-development */
             className.tr = 'active';
             setInnerPath.base = '';
             setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 22) {  /** Training - engineering-software */
+        } else if(pathnameTruth.indexOf('true') === 22) {  /** Training - engineering-software */
             className.tr = 'active';
             setInnerPath.base = '';
             setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 23) {  /** Training - statistical-software */
+        } else if(pathnameTruth.indexOf('true') === 23) {  /** Training - statistical-software */
             className.tr = 'active';
             setInnerPath.base = '';
             setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 24) {  /** Training - research-protocol */
+        } else if(pathnameTruth.indexOf('true') === 24) {  /** Training - research-protocol */
             className.tr = 'active';
             setInnerPath.base = '';
             setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 25) {  /** Training - statistical-software - SPSS */
+        } else if(pathnameTruth.indexOf('true') === 25) {  /** Training - statistical-software - SPSS */
             className.tr = 'active';
             setInnerPath.base = '';
             setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-        if(pathnameTruth.indexOf('true') === 26) {  /** Training - statistical-software - R */
+        } else if(pathnameTruth.indexOf('true') === 26) {  /** Training - statistical-software - R */
             className.tr = 'active';
             setInnerPath.base = '';
             setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 27) {  /** Training - statistical-software - STATA */
+        } else if(pathnameTruth.indexOf('true') === 27) {  /** Training - statistical-software - STATA */
             className.tr = 'active';
             setInnerPath.base = '';
             setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 28) {  /** Training - statistical-software - SAS */
+        } else if(pathnameTruth.indexOf('true') === 28) {  /** Training - statistical-software - SAS */
             className.tr = 'active';
             setInnerPath.base = '';
             setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 29) {  /** Training - statistical-software - EpiInfo */
-        className.tr = 'active';
-        setInnerPath.base = '';
-        setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 30) {  /** Training - statistical-software - SaTScan */
-        className.tr = 'active';
-        setInnerPath.base = '';
-        setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 31) {  /** News and Events - All News */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 32) {  /** News and Events - All Event */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 33) {  /** News and Events - All News - news1 */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 34) {  /** News and Events - All News - news2 */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 35) {  /** News and Events - All News - news3 */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 36) {  /** News and Events - All News - news4 */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 37) {  /** News and Events - All News - news5 */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 38) {  /** News and Events - All News - news6 */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 39) {  /** News and Events - All News - news7 */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 40) {  /** News and Events - All News - news8 */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 41) {  /** News and Events - All News - news9 */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 42) {  /** News and Events - All News - news10 */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 43) {  /** News and Events - All Event - event1 */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 44) {  /** News and Events - All Event - event2 */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 45) {  /** News and Events - All Event - event3 */
-        className.ne = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        
-
-        if(pathnameTruth.indexOf('true') === 46) {  /** Home - about-us/html */
-        className.ho = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ho = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 47) {  /** Home - contact-us.html */
-        className.ho = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ho = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 48) {  /** Home - president-message.html */
-        className.ho = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ho = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 49) {  /** Home - vedio.html */
-        className.ho = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ho = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 50) {  /** Home - gallery.html */
-        className.ho = 'active';
-        setInnerPath.base = '';
-        setInnerPath.ho = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 51) {  /** News and Events - All News - news11 */
+        } else if(pathnameTruth.indexOf('true') === 29) {  /** Training - statistical-software - EpiInfo */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
+        } else if(pathnameTruth.indexOf('true') === 30) {  /** Training - statistical-software - SaTScan */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
+        } else if(pathnameTruth.indexOf('true') === 31) {  /** News and Events - All News */
+            className.ne = 'active';
+            setInnerPath.base = '';
+            setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 32) {  /** News and Events - All Event */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 33) {  /** News and Events - All News - news1 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 34) {  /** News and Events - All News - news2 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 35) {  /** News and Events - All News - news3 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 36) {  /** News and Events - All News - news4 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 37) {  /** News and Events - All News - news5 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 38) {  /** News and Events - All News - news6 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 39) {  /** News and Events - All News - news7 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 40) {  /** News and Events - All News - news8 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 41) {  /** News and Events - All News - news9 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 42) {  /** News and Events - All News - news10 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 43) {  /** News and Events - All Event - event1 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 44) {  /** News and Events - All Event - event2 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 45) {  /** News and Events - All Event - event3 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 46) {  /** Home - about-us/html */
+          className.ho = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ho = '';
+        } else if(pathnameTruth.indexOf('true') === 47) {  /** Home - contact-us.html */
+          className.ho = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ho = '';
+        } else if(pathnameTruth.indexOf('true') === 48) {  /** Home - president-message.html */
+          className.ho = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ho = '';
+        } else if(pathnameTruth.indexOf('true') === 49) {  /** Home - vedio.html */
+          className.ho = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ho = '';
+        } else if(pathnameTruth.indexOf('true') === 50) {  /** Home - gallery.html */
+          className.ho = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ho = '';
+        } else if(pathnameTruth.indexOf('true') === 51) {  /** News and Events - All News - news11 */
+            className.ne = 'active';
+            setInnerPath.base = '';
+            setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 52) {  /** News and Events - All News - news12 */
+            className.ne = 'active';
+            setInnerPath.base = '';
+            setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 53) {  /** Training - Digital Library */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
+        } else if(pathnameTruth.indexOf('true') === 54) {  /** Training - Digital Library - Crop production */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
+        } else if(pathnameTruth.indexOf('true') === 55) {  /** Training - Digital Library - Animal production */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
+        } else if(pathnameTruth.indexOf('true') === 56) {  /** Training - Digital Library - Natural Resource... */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
+        } else if(pathnameTruth.indexOf('true') === 57) {  /** Training - Digital Library - Animal Health */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
+        } else if(pathnameTruth.indexOf('true') === 58) {  /** Training - Digital Library - Tour operation */
+            className.tr = 'active';
+            setInnerPath.base = '';
+            setInnerPath.tr = '';
+        } else if(pathnameTruth.indexOf('true') === 59) {  /** News and Events - All News - news13 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 60) {  /** News and Events - All News - news14 */
           className.ne = 'active';
           setInnerPath.base = '';
           setInnerPath.ne = '';
@@ -559,73 +380,6 @@
         // className.ad = '';
         // setUrl.ad = '../ad/admissions.html';
         }
-
-        if(pathnameTruth.indexOf('true') === 52) {  /** News and Events - All News - news12 */
-          className.ne = 'active';
-          setInnerPath.base = '';
-          setInnerPath.ne = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 53) {  /** Training - Digital Library */
-            className.tr = 'active';
-            setInnerPath.base = '';
-            setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 54) {  /** Training - Digital Library - Crop production */
-            className.tr = 'active';
-            setInnerPath.base = '';
-            setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 55) {  /** Training - Digital Library - Animal production */
-            className.tr = 'active';
-            setInnerPath.base = '';
-            setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 56) {  /** Training - Digital Library - Natural Resource... */
-            className.tr = 'active';
-            setInnerPath.base = '';
-            setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 57) {  /** Training - Digital Library - Animal Health */
-            className.tr = 'active';
-            setInnerPath.base = '';
-            setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-        if(pathnameTruth.indexOf('true') === 58) {  /** Training - Digital Library - Tour operation */
-            className.tr = 'active';
-            setInnerPath.base = '';
-            setInnerPath.tr = '';
-        } else {
-        // className.ad = '';
-        // setUrl.ad = '../ad/admissions.html';
-        }
-
-
-
-
     }
     setClassName();
 
@@ -745,7 +499,7 @@
                         <li class="nav-link-wrapper dropdown">
                             <div class="inner-wrapper">
                                 <a class="${className.tr} dropdown-link" href="${setUrl.tr}">
-                                    <i class="bi bi-book-half"></i>Training
+                                    <i class="bi bi-book-half"></i>Training 
                                 </a>
                                 <span class="dropdown-closed nav-span-two"></span>
                             </div>
