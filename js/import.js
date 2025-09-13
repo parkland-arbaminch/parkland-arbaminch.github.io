@@ -22,7 +22,8 @@
                     'about-us.html', 'contact-us.html', 'president-message.html', 'video.html', 'gallery.html',
                     'news11.html', 'news12.html',
                     'e-library.html', 'crop-production.html', 'animal-production.html', 'natural-resource-conservation.html', 'animal-health.html', 'tour-operation.html',
-                    'news13.html', 'news14.html']
+                    'news13.html', 'news14.html',
+                    'jobs_and_vacancies.html', 'event4.html', 'event5.html', 'event6.html']
     ;
 
     // let mainPathname = ['home', 'ad', 'ac', 'coc', 'tr', 'ne'];
@@ -376,6 +377,22 @@
           className.ne = 'active';
           setInnerPath.base = '';
           setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 61) {  /** Home - jobs_and_vacancies.html */
+          className.ho = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ho = '';
+        } else if(pathnameTruth.indexOf('true') === 62) {  /** News and Events - All Event - event4 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 63) {  /** News and Events - All Event - event5 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
+        } else if(pathnameTruth.indexOf('true') === 64) {  /** News and Events - All Event - event6 */
+          className.ne = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ne = '';
         } else {
         // className.ad = '';
         // setUrl.ad = '../ad/admissions.html';
@@ -578,7 +595,7 @@
                         <ul>
                             <li><a href="${setInnerPath.base}${setInnerPath.ho}contact-us.html">Any questions? Contact us</a></li>
                             <li><a href="${setInnerPath.base}${setInnerPath.ho}president-message.html">President Message</a></li>
-                            <li><a href="#">Jobs & vacancies</a></li>
+                            <li><a href="${setInnerPath.base}${setInnerPath.ho}jobs_and_vacancies.html">Jobs & vacancies</a></li>
                             <li><a href="#">Term dates</a></li>
                             <li><a href="#">Map</a></li>
                             <li><a href="#"></a></li>
