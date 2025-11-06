@@ -619,7 +619,7 @@ nav > .logo {
     gap: 0.5vw;
 }
 nav > .logo > a > h1 span {
-    font-size: 1rem;
+    font-size: .75rem;
 }
 nav > .logo > a {
     font-weight: 700;
@@ -3335,4 +3335,5 @@ aside.spotlight img.ic-two-touch {  /** 'ic-two' stands for 'inner-container-two
     }
     
 }
+
 
