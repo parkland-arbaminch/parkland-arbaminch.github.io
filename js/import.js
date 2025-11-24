@@ -536,6 +536,12 @@
                                 <i class="bi bi-newspaper"></i>News & Events
                             </a>
                         </li>
+
+                        <li class="nav-link-wrapper no-link-wrapper">
+                          <a class="dropdown-no-link" href="https://smis.parklandcollegeam.com/login">
+                            <i class="bi bi-database"></i>SMIS
+                          </a>
+                        </li>
                     </ul>
                     
                 </div>
@@ -604,8 +610,9 @@
                     <div class="col">
                         <h2>Systems</h2>
                         <ul>
-                            <li><a href="#">Parkland mail</a></li>
+                            <li><a href="https://smis.parklandcollegeam.com/login">SMIS</a></li>
                             <li><a href="${setInnerPath.base}${setInnerPath.tr}e-library.html">Digital library</a></li>
+                            <li><a href="#">Parkland mail</a></li>
                             <li><a href="#">E-learning</a></li>
                         </ul>
                     </div>
@@ -626,3 +633,4 @@
     }
 
 }());
+
