@@ -3114,7 +3114,27 @@ aside.spotlight img.ic-two-touch {  /** 'ic-two' stands for 'inner-container-two
     transform: scale(1.1);
 }
 
-
+/* Staff Profile */
+.inner-home-cont-one .home-path .staff-cont ol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  counter-reset: item;
+}
+.inner-home-cont-one .home-path .staff-cont ol li {
+  margin-left: 12px;
+}
+.inner-home-cont-one .home-path .staff-cont ol li span.inner-cont {
+  display: block;
+}
+.inner-home-cont-one .home-path .staff-cont ol li span.inner-cont:first-child {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.inner-home-cont-one .home-path .staff-cont ol li::marker {
+  color: var(--nav-color-2);
+  font-weight: 700;
+}
 
 
 /* PATH: =============================================== All Videos */
@@ -3381,6 +3401,7 @@ aside.spotlight img.ic-two-touch {  /** 'ic-two' stands for 'inner-container-two
     }
     
 }
+
 
 
 
