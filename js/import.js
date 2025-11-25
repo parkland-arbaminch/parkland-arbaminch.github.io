@@ -23,7 +23,8 @@
                     'news11.html', 'news12.html',
                     'e-library.html', 'crop-production.html', 'animal-production.html', 'natural-resource-conservation.html', 'animal-health.html', 'tour-operation.html',
                     'news13.html', 'news14.html',
-                    'jobs_and_vacancies.html', 'event4.html', 'event5.html', 'event6.html']
+                    'jobs_and_vacancies.html', 'event4.html', 'event5.html', 'event6.html',
+                    'calender.html']
     ;
 
     // let mainPathname = ['home', 'ad', 'ac', 'coc', 'tr', 'ne'];
@@ -393,6 +394,10 @@
           className.ne = 'active';
           setInnerPath.base = '';
           setInnerPath.ne = '';
+        } else if (pathnameTruth.indexOf('true') === 65) {  /** Academic - Calender  */
+          className.ac = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ac = '';
         } else {
         // className.ad = '';
         // setUrl.ad = '../ad/admissions.html';
@@ -495,6 +500,7 @@
                                 <li><a href="${setInnerPath.base}${setInnerPath.ac}diploma_program.html">Diploma Programs</a></li>
                                 <li><a href="${setInnerPath.base}${setInnerPath.ac}masters.html">Postgraduate Programs</a></li>
                                 <li><a href="${setInnerPath.base}${setInnerPath.ac}distance.html">Continuing & Distance Education</a></li>
+                                <li><a href="${setInnerPath.base}${setInnerPath.ac}calender.html">Calender</a></li>
                             </ul>  
                         </li>
 
@@ -633,4 +639,5 @@
     }
 
 }());
+
 
