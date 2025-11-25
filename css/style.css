@@ -2010,6 +2010,49 @@ aside.spotlight img.ic-two-touch {  /** 'ic-two' stands for 'inner-container-two
     margin-right: .5rem;
 }
 
+/* .calender*/
+.inner-aca-cont-one .calender-cont .calender {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-1);
+    margin-top: 6px;
+    /* width: 100%; */
+}
+.inner-aca-cont-one .calender-cont .calender a {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-1);;
+    padding: var(--padding-4);
+    border: 1px solid #E0DED9;
+    border-top-right-radius: 15px;
+    font-weight: bold;
+    align-items: center;
+}
+.inner-aca-cont-one .calender-cont .calender a .bi {
+    font-size: 2rem;
+    color: #ffffff;
+    padding: var(--padding-4);
+    border-top-right-radius: 15px;
+    margin-right: 0; /** to override, which was setted .5rem */
+}
+.inner-aca-cont-one .calender-cont .calender a .bi-file-word {
+    background: #004DB3;
+}
+.inner-aca-cont-one .calender-cont .calender a .bi-file-pdf {
+    background: #B50706;
+}
+.inner-aca-cont-one .calender-cont .calender a .bi-journals {
+    background: #82B317;
+}
+.inner-aca-cont-one .calender-cont .calender a:first-child {
+    color: #004DB3;
+}
+.inner-aca-cont-one .calender-cont .calender a:nth-child(2) {
+    color: #B50706;
+}
+.inner-aca-cont-one .calender-cont .calender a:nth-child(3) {
+    color: #82B317;
+}
 
 /** Counter */
 #mainContainer {
@@ -3338,6 +3381,7 @@ aside.spotlight img.ic-two-touch {  /** 'ic-two' stands for 'inner-container-two
     }
     
 }
+
 
 
 
