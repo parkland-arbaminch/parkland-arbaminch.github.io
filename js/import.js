@@ -24,7 +24,7 @@
                     'e-library.html', 'crop-production.html', 'animal-production.html', 'natural-resource-conservation.html', 'animal-health.html', 'tour-operation.html',
                     'news13.html', 'news14.html',
                     'jobs_and_vacancies.html', 'event4.html', 'event5.html', 'event6.html',
-                    'calender.html']
+                    'calender.html', 'staff.html']
     ;
 
     // let mainPathname = ['home', 'ad', 'ac', 'coc', 'tr', 'ne'];
@@ -398,6 +398,10 @@
           className.ac = 'active';
           setInnerPath.base = '';
           setInnerPath.ac = '';
+        } else if (pathnameTruth.indexOf('true') === 66) {  /** Home - staff.html */
+          className.ho = 'active';
+          setInnerPath.base = '';
+          setInnerPath.ho = '';
         } else {
         // className.ad = '';
         // setUrl.ad = '../ad/admissions.html';
@@ -580,9 +584,9 @@
                         <h2>Information About</h2>
                         <ul>
                             <li><a href="${setInnerPath.base}${setInnerPath.ho}about-us.html">About us</a></li>
-                            <li><a href="#">Staffs</a></li>
-                            <li><a href="#">Course fees & scholarship</a></li>
+                            <li><a href="${setInnerPath.base}${setInnerPath.ho}staff.html">Staff Profile</a></li>
                             <li><a href="${setInnerPath.base}${setInnerPath.tr}e-library.html">Libraries</a></li>
+                            <li><a href="#">Course fees & scholarship</a></li>
                             <li><a href="#">Strategic plan</a></li>
                             <li><a href="#">Parkland's research</a></li>
                             <li><a href="#">Conferences at Parkland</a></li>
@@ -639,5 +643,6 @@
     }
 
 }());
+
 
 
